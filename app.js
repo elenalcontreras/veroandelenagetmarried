@@ -70,23 +70,68 @@ function renderTimeline(t){
 
 function renderHotels(t){
   const el = document.getElementById('hotelGrid');
-  let lastGroup = null;
-  el.innerHTML = t.getting.hotels.map((h, i) => {
-    let heading = '';
-    if(h.group && h.group !== lastGroup){
-      heading = `<div class="hotel-group-heading">${h.group}</div>`;
-      lastGroup = h.group;
-    }
-    return `${heading}
-    <div class="hotel-card">
-      <span class="tag ${h.tag.toLowerCase().includes('camp') ? 'camp' : ''}">${h.tag}</span>
-      <h4>${h.name}</h4>
-      <div class="dist">${h.dist}</div>
-      <p>${h.text}</p>
-      ${photoFrame(`hotel-${i+1}.jpg`, 'hotel-photo')}
-    </div>`;
-  }).join('');
+  const groups = {};
+  const groupOrder = [];
+  t.getting.hotels.forEach((h, i) => {
+    const g = h.group || '';
+    if(!groups[g]){ groups[g] = []; groupOrder.push(g); }
+    groups[g].push({ h, index: i });
+  });
+
+  el.innerHTML = groupOrder.map(g => `
+    <div class="stay-group">
+      <div class="hotel-group-heading">${g}</div>
+      <div class="carousel">
+        <button class="car-btn car-prev" type="button" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 5L8 12L15 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="car-track">
+          ${groups[g].map(({h, index}) => `
+            <div class="hotel-card">
+              <span class="tag ${h.tag.toLowerCase().includes('camp') ? 'camp' : ''}">${h.tag}</span>
+              <h4>${h.name}</h4>
+              <div class="dist">${h.dist}</div>
+              <p>${h.text}</p>
+              ${h.url ? `
+              <a class="hotel-photo-link" href="${h.url}" target="_blank" rel="noopener" aria-label="${h.name}">
+                ${photoFrame(`hotel-${index+1}.jpg`, 'hotel-photo')}
+                <span class="hotel-photo-cta">${t.getting.book_label || 'Book'}</span>
+              </a>` : photoFrame(`hotel-${index+1}.jpg`, 'hotel-photo')}
+            </div>
+          `).join('')}
+        </div>
+        <button class="car-btn car-next" type="button" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  `).join('');
+
   setupPhotoFallbacks();
+  setupCarousels();
+}
+
+// Scrolls a carousel track left/right by roughly one card's width per click,
+// and disables the prev/next arrow once there's nothing left to scroll that way.
+function setupCarousels(){
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.car-track');
+    const prevBtn = carousel.querySelector('.car-prev');
+    const nextBtn = carousel.querySelector('.car-next');
+    if(!track || !prevBtn || !nextBtn) return;
+
+    // Scroll by ~90% of whatever is currently visible, so it always moves
+    // roughly "one screenful" regardless of exact card widths or gaps.
+    function scrollStep(){
+      return Math.max(track.clientWidth * 0.9, 240);
+    }
+    prevBtn.addEventListener('click', () => {
+      track.scrollBy({ left: -scrollStep(), behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      track.scrollBy({ left: scrollStep(), behavior: 'smooth' });
+    });
+  });
 }
 
 const featureIcons = [
