@@ -447,8 +447,8 @@ const translations = {
         {q:"Possiamo arrivare in auto?", a:"Sì: consultate la pagina 'Come Arrivare' per l'indirizzo, le indicazioni e i dettagli sul parcheggio!"},
         {q:"C'è un trasporto da Barcellona o Terrassa?", a:"Sì, stiamo preparando dei bus navetta tra Barcellona/Terrassa e la Masia Egara, sia per l'arrivo che per il ritorno a fine serata. Li stiamo ancora organizzando, quindi ricontrollate il sito più avanti per il punto d'incontro e gli orari."},
         {q:"Chi posso contattare per domande?", a:"Scriveteci quando volete! <br>Elena López-Contreras: <a href='https://wa.me/33786571310' target='_blank' rel='noopener'>+33 7 86 57 13 10</a> (WhatsApp) oppure <a href='mailto:elenalcontreras@gmail.com'>elenalcontreras@gmail.com</a><br>Veronica Orlandi: <a href='tel:+33772398742'>+33 7 72 39 87 42</a> oppure <a href='mailto:veronica.orlandi97@gmail.com'>veronica.orlandi97@gmail.com</a>"},
-        {q:"Posso portare un accompagnatore?", a:"Ci piacerebbe accogliere tutti, ma lo spazio è limitato e abbiamo optato per una celebrazione più piccola e intima! Quindi, questa volta, l'invito è solo per te, e siamo felicissime che tu faccia parte della nostra giornata!"},
-        {q:"I bambini sono benvenuti?", a:"Sì, e se il livello di zuccheri sarà abbastanza alto, sappiamo che li vedremo in pista. Fateci sapere in anticipo se verranno a festeggiare!"}
+        {q:"Posso portare un +1?", a:"Ci piacerebbe accogliere tutti, ma lo spazio è limitato e abbiamo optato per una celebrazione più piccola e intima! Quindi, questa volta, l'invito è solo per te, e siamo felicissime che tu faccia parte della nostra giornata!"},
+        {q:"Bimbe e bimbi sono benvenuti?", a:"Sì, e se il livello di zuccheri sarà abbastanza alto, sappiamo che li vedremo in pista. Fateci sapere in anticipo se verranno a festeggiare!"}
       ]
     },
     footer:{ text:"Fatto con amore. Ci vediamo alla Masia Egara." },
