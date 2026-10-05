@@ -6,26 +6,26 @@ const translations = {
     brand:{ short:"V&amp;E" },
     nav:{ home:"Home", event:"The Event", getting:"Getting There", location:"The Venue", faq:"FAQ", rsvp:"RSVP" },
     home:{
-      eyebrow:"We're getting married",
+      eyebrow:"What??? We're getting married?????",
       names:"Veronica &amp; Elena",
       date:"24 April, 2027",
       venue:"Masia Egara · Terrassa, Catalonia",
       welcome_title:"Welcome",
-      welcome_text:"After all this time, we finally get to say it out loud: we're getting married, and we want you there with us. Under the old stone arches of Masia Egara, surrounded by the people we love most, we'll celebrate a day we've been dreaming about for a long time. Use the menu above for everything you need to know — the schedule, how to get there, where to stay, and answers to the questions we know you'll ask.",
+      welcome_text:"Who would have thought we would do this? No, not locking Elena up in a bunker to simulate the Moon, even though that was your first guess. We are, however, on cloud nine. Who would have thought we would get married? Maybe you did, and so did we, after deciding on a crazy afternoon in December. Above all, we decided that we wanted to proudly celebrate our love with you, the people reading this message. After all, to raise two lesbians, it takes a village. And what better place to gather this village than Spain, one of the very first countries in the world to allow such a celebration to even exist? So, for the occasion, we are bringing you near Barcelona, Elena's hometown. More specifically, to a wonderful place called Masia Egara. Many things drew us to this venue, and we will reveal them step by step through this website, right up until the wedding day.",
       countdown_title:"Counting down to the big day",
       days:"Days", hours:"Hours", minutes:"Minutes", seconds:"Seconds",
       explore:"Explore the celebration"
     },
     event:{
       title:"The Celebration",
-      intro:"Here's how the day will unfold. Every moment has its own place and its own light — from the first vows to the last dance.",
+      intro:"What will our day look like? Thanks to the magical place that is Masia Egara, we will be carried through different spaces, each one with its own atmosphere. Together, we will watch the last lights of the day hide behind the trees and dance under the light of the furthest stars.",
       items:[
-        {time:"17:00", title:"Ceremony", place:"Bosque, Masia Egara", text:"We'll gather among the trees for the ceremony, conducted by Pau Torner. Please try to arrive at least half an hour early, around 16:30. The ceremony itself will last about an hour."},
-        {time:"18:30", title:"Cocktail Hour", place:"Jardín Rojo, Masia Egara", text:"Drinks and Catalan cuisine from the Delta de l'Ebre, prepared by Xerta Catering, with photos and video happening alongside."},
-        {time:"20:30", title:"Dinner", place:"Era, Masia Egara", text:"We'll sit down for dinner in the Era, right in front of the masia, topped off with cake!"},
-        {time:"23:30", title:"Party", place:"Bodega, Masia Egara", text:"Time to dance the night away, indoors in the Bodega."}
+        {time:"17:00", title:"Ceremony", place:"Bosque, Masia Egara", text:"For the ceremony, we will gather in a tiny forest. This moment, the most intimate of the day, will last about an hour. If you can, please try to arrive at least half an hour early, around 16:30. See you among the trees!"},
+        {time:"18:30", title:"Cocktail Hour", place:"Jardín Rojo, Masia Egara", text:"From the forest to a peaceful garden, we will have drinks and Catalan cuisine from the Delta de l'Ebre. We hope to share with you a little bit of the region we will be in!"},
+        {time:"20:30", title:"Dinner", place:"Era, Masia Egara", text:"As night falls, we will move towards the walls of the masia. For dinner, we will sit in the Era, right in front of the masia's entrance!"},
+        {time:"23:30", title:"Party", place:"Bodega, Masia Egara", text:"For the final part of the wedding, we will finally walk through the gates of the masia. Time to dance the night away, indoors, in the Bodega!"}
       ],
-      note:"These timings are as accurate as we can make them — we'll let you know if anything changes."
+      note:"These timings are as accurate as we can make them; we'll let you know if anything changes."
     },
     getting:{
       title:"How to Get There",
@@ -33,7 +33,7 @@ const translations = {
       by_car_title:"By Car",
       by_car_text:"The address is Carretera de Rellinars Km 2.4, 08225 Terrassa, Barcelona, Spain — <a href='https://maps.app.goo.gl/DeM8DD5ZF3uXXBXk6' target='_blank' rel='noopener'>open in Google Maps</a>. There's a large car park about 10 minutes on foot from the venue, along a gravel path; if you have accessibility needs, there's a closer parking area available — just let us know.",
       by_bus_title:"By Bus",
-      by_bus_text:"We're organizing shuttle buses from [Terrassa, meeting point] to Masia Egara, departing around [XX:XX], with a return service at the end of the night. More details closer to the date.",
+      by_bus_text:"We're still planning shuttle buses between Barcelona/Terrassa and Masia Egara, for both the arrival and the return at the end of the night. Check back on this page later: we'll add the meeting point and times here as soon as they're set.",
       from_bcn_title:"From Barcelona",
       from_bcn_text:"We recommend landing in Barcelona. From there you can choose to stay in Barcelona itself, in Terrassa, or even in Sabadell, the nearest city, if you have a car.<br><br>To get from Barcelona to Terrassa, take the Ferrocarrils de la Generalitat (FGC) line S1 from Plaça Catalunya, Provença, or Muntaner in the city centre, and get off at Vallparadís Universitat or Terrassa Nord, where our shuttle buses will depart from. A single trip costs 5.40€; make sure to buy a Zona 3 ticket.<br><br>An Uber from Barcelona costs around 50€ and is also an option if you would rather travel there directly.",
       map_label:"Find us on the map",
@@ -63,34 +63,32 @@ const translations = {
     },
     location:{
       title:"Masia Egara",
-      subtitle:"Where we'll say I do",
-      text1:"Masia Egara is a Catalan farmhouse just outside Terrassa, surrounded by fields and gardens. Its stone arches, wooden beams and open courtyards make it feel like a place that's been waiting for a celebration.",
-      text2:"We love the colours and the lush gardens here, and we can't wait to share a true Catalan masia with you.",
-      photo_note:"[Add photos of the venue here]",
-      features:[
-        {label:"Gardens", text:"Home to the Jardín Rojo, the Jardín Verde, and the centenary garden."},
-        {label:"Ceremony space", text:"In the Bosque (forest), a small natural amphitheatre."},
-        {label:"Onsite parking", text:"Available, please confirm with us in advance."},
-        {label:"Accessibility", text:"Closer parking available near the venue for anyone who needs it."}
-      ]
+      subtitle:"A Catalan farmhouse with eight centuries of stories",
+      q1:"What is a masia?",
+      text1:"A masia is a <strong>traditional Catalan farmhouse</strong>, where the family who owned the land lived and worked. Nowadays, many masias have been turned into hotels, restaurants, and spaces for celebrations.",
+      q2:"What's the story of Masia Egara?",
+      text2:"Masia Egara takes its name from <strong>Egara, the old Roman name of Terrassa</strong>. The house, originally known as Ca n'Amat, already appears in documents from the <strong>early 13th century</strong>, when it was under the rule of the monastery of Montserrat. The building you'll see today dates from the <strong>early 16th century</strong>, and it has always belonged to the same family. During the Spanish Civil War, that family <strong>hid republicans within its walls</strong>.",
+      text2b:"Today it stands at the heart of <strong>300 hectares</strong> of fields and forest, surrounded by <strong>4 hectares of century-old gardens</strong> designed by the school of the architect <strong>Rubió i Tudurí</strong>, among the best-preserved private gardens in Catalonia. Inside, its rooms hold furniture and art from every period, from 16th-century tapestries to modern paintings.",
+      q3:"Why did we fall in love with it?",
+      text3:"It's close to where Elena comes from (right next to where she studied, actually), it carries a <strong>story of bravery</strong>, and, just like its history, it's full of <strong>secret corners</strong>. Walking around, we felt a kind of <strong>bohemian magic</strong>: the sense that something fantastic could happen at any moment."
     },
     faq:{
       title:"Frequently Asked Questions",
       items:[
-        {q:"Do you have a gift registry?", a:"The best gift is having you there with us. If you'd still like to contribute to something, a gift towards our honeymoon means more to us than a physical one — you're welcome to send it by bank transfer: IBAN [to be added]."},
-        {q:"What's the dress code?", a:"Elegant. We'll be outdoors on grass and gravel, so we'd suggest comfortable shoes over thin heels."},
-        {q:"Can we arrive by car?", a:"Yes: see the 'Getting There' page for the address, directions, and parking details."},
-        {q:"Is there transport from Terrassa?", a:"Yes, we're arranging shuttle buses between Terrassa and the venue, both for arrival and for the return at the end of the night. Timings will be shared closer to the date."},
-        {q:"Who can I contact with questions?", a:"Reach out any time! [Name]: [phone / email], [Name]: [phone / email]."},
-        {q:"Can I bring a plus one?", a:"Unfortunately not, due to space limitations. If you're able to bring someone, they'll have received their own invitation."},
-        {q:"Are children welcome?", a:"If your invitation includes your children, they're more than welcome! If it doesn't, we hope you understand — with such a small venue, we have to keep numbers tight."}
+        {q:"Do you have a gift registry?", a:"The best gift is having you there with us. If you'd still like to contribute to something, a gift towards our honeymoon means more to us than a physical one — you're welcome to send it by bank transfer: IBAN [to be added].<br><br>And since we're terrible at keeping secrets, here are three photos of where we're heading. Can you guess where it is? No prizes, just bragging rights.", photos:3},
+        {q:"What's the dress code?", a:"Come as you are! Any variation of elegant, from classy to campy, is more than welcome. Wear any colour (OK, besides white, there will already be two of us in it), texture, or fabric: as long as you love it, we'll love it too."},
+        {q:"Can we arrive by car?", a:"Yes: see the 'Getting There' page for the address, directions, and parking details!"},
+        {q:"Is there transport from Barcelona or Terrassa?", a:"Yes, we're working on shuttle buses between Barcelona/Terrassa and Masia Egara, for both the arrival and the return at the end of the night. We're still planning them, so check back on the website later for the meeting point and times."},
+        {q:"Who can I contact with questions?", a:"Reach out any time! Elena López-Contreras: <a href='https://wa.me/33786571310' target='_blank' rel='noopener'>+33 7 86 57 13 10</a> (WhatsApp) or <a href='mailto:elenalcontreras@gmail.com'>elenalcontreras@gmail.com</a>."},
+        {q:"Can I bring a plus one?", a:"We would love to welcome everyone, but space is limited and we've dreamed of a small, intimate celebration surrounded by the people closest to us. So this time, the invitation is just for you, and we're so happy you'll be part of our day!"},
+        {q:"Are children welcome?", a:"Yes, and if the sugar levels are high enough, we know we will see them on the dance floor. Please let us know in advance if your kids will be coming!"}
       ]
     },
     footer:{ text:"Made with love. See you at Masia Egara." },
     rsvp:{
       title:"Elena &amp; Vero's Wedding Questionnaire",
       intro_note:"One form per person, please, including children. We're not able to accommodate additional guests, so if you're bringing someone, they'll have received their own invitation.",
-      text:"We'd be delighted to have you with us on our special day. Please confirm your attendance below, we need everyone's completed questionnaire back to make sure we have all the right information and can keep the wedding running smoothly. Everything you share will be treated with full privacy, in line with data protection law, and used only to organize our event. Thank you for your help, and please send it back before December 1st!",
+      text:"As you may have guessed, if you received this invitation, it's because <strong>you are part of our village</strong>: the people we share our lives with. We couldn't imagine celebrating without the very people who make it worth celebrating. So, coming from near or far, far away, <strong>we'd be delighted to have you with us</strong> on our special day.<br><br>The form at the link below will help us <strong>organize the whole day</strong> and <strong>know if you can attend</strong>. We need everyone's completed questionnaire back to make sure we have all the right information. Everything you share will be treated with <strong>full privacy</strong>, in line with data protection law, and used only to organize our event.<br><br><strong>One form per person.</strong> If you have children, <strong>complete one for each of them</strong> as well. Our guest list is quite small, so every guest has received <strong>their own personal invitation</strong>: if someone dear to you is joining us, they'll have one with their name on it too!<br><br>Thank you for your help, and please send it back <strong>before December 1st</strong>!",
       button:"Open the RSVP form"
     }
   },
@@ -101,34 +99,34 @@ const translations = {
     brand:{ short:"V&amp;E" },
     nav:{ home:"Inicio", event:"El Evento", getting:"Cómo Llegar", location:"El Lugar", faq:"Preguntas", rsvp:"RSVP" },
     home:{
-      eyebrow:"Nos casamos",
+      eyebrow:"¿¿¿Qué??? ¿¿¿Nos casamos?????",
       names:"Veronica &amp; Elena",
-      date:"24 Abril, 2027",
+      date:"24 de abril de 2027",
       venue:"Masia Egara · Terrassa, Cataluña",
       welcome_title:"Bienvenidos",
-      welcome_text:"Después de todo este tiempo, por fin podemos decirlo en voz alta: nos casamos, y queremos teneros con nosotros. Bajo los antiguos arcos de piedra de Masia Egara, rodeados de las personas que más queremos, celebraremos un día que llevamos mucho tiempo soñando. Usad el menú de arriba para encontrar todo lo que necesitáis saber: el horario, cómo llegar, dónde alojaros y las respuestas a esas preguntas que sabemos que os haréis.",
+      welcome_text:"¿Quién habría pensado que haríamos esto? No, no hablamos de encerrar a Elena en un búnker para simular la Luna, aunque eso fuera lo primero que pensasteis. Eso sí, estamos en una nube. ¿Quién habría pensado que nos casaríamos? Quizás vosotros sí, y nosotras también, después de decidirlo una tarde loca de diciembre. Por encima de todo, decidimos que queríamos celebrar con orgullo nuestro amor con vosotros, las personas que estáis leyendo este mensaje. Al fin y al cabo, para criar a dos lesbianas hace falta un pueblo entero. ¿Y qué mejor lugar para reunir a este pueblo que España, uno de los primeros países del mundo en permitir que una celebración así pudiera siquiera existir? Así que, para la ocasión, os llevamos cerca de Barcelona, la tierra de Elena. Más concretamente, a un lugar maravilloso llamado Masia Egara. Muchas cosas nos atrajeron de este sitio, y os las iremos desvelando poco a poco a través de esta web, hasta el día de la boda.",
       countdown_title:"Cuenta atrás para el gran día",
       days:"Días", hours:"Horas", minutes:"Minutos", seconds:"Segundos",
       explore:"Descubrir la celebración"
     },
     event:{
       title:"La Celebración",
-      intro:"Así se desarrollará el día. Cada momento tiene su lugar y su propia luz, desde los primeros votos hasta el último baile.",
+      intro:"¿Cómo será nuestro día? Gracias a ese lugar mágico que es Masia Egara, iremos pasando por distintos rincones, cada uno con su propio ambiente. Juntos veremos cómo las últimas luces del día se esconden tras los árboles y bailaremos bajo la luz de las estrellas más lejanas.",
       items:[
-        {time:"17:00", title:"Ceremonia", place:"Bosque, Masia Egara", text:"Nos reuniremos entre los árboles para la ceremonia, oficiada por Pau Torner. Intentad llegar al menos media hora antes, sobre las 16:30 — la ceremonia en sí durará aproximadamente una hora."},
-        {time:"18:30", title:"Aperitivo", place:"Jardín Rojo, Masia Egara", text:"Cóctel y cocina catalana del Delta de l'Ebre, a cargo de Xerta Catering, con fotos y vídeo en paralelo."},
-        {time:"20:30", title:"Cena", place:"Era, Masia Egara", text:"Cena sentada en la Era, justo delante de la masía — ¡rematada con tarta!"},
-        {time:"23:30", title:"Fiesta", place:"Bodega, Masia Egara", text:"¡Hora de fiesta! A bailar en la Bodega, en el interior."}
+        {time:"17:00", title:"Ceremonia", place:"Bosque, Masia Egara", text:"Para la ceremonia nos reuniremos en un pequeño bosque. Este momento, el más íntimo del día, durará alrededor de una hora. Si podéis, intentad llegar al menos media hora antes, sobre las 16:30. ¡Nos vemos entre los árboles!"},
+        {time:"18:30", title:"Aperitivo", place:"Jardín Rojo, Masia Egara", text:"Del bosque pasaremos a un jardín tranquilo, donde tomaremos algo y probaremos cocina catalana del Delta de l'Ebre. ¡Queremos compartir con vosotros un poquito de la tierra en la que estaremos!"},
+        {time:"20:30", title:"Cena", place:"Era, Masia Egara", text:"Cuando caiga la noche, nos acercaremos a los muros de la masía. Para cenar nos sentaremos en la Era, ¡justo delante de la entrada de la masía!"},
+        {time:"23:30", title:"Fiesta", place:"Bodega, Masia Egara", text:"Para la última parte de la boda, por fin cruzaremos las puertas de la masía. ¡Hora de bailar hasta que el cuerpo aguante, en el interior, en la Bodega!"}
       ],
-      note:"Estos horarios son lo más precisos posible — os avisaremos si hay algún cambio."
+      note:"Estos horarios son lo más precisos posible; os avisaremos si hay algún cambio."
     },
     getting:{
       title:"Cómo Llegar",
-      intro:"Masia Egara está en plena naturaleza cerca de Terrassa, a unos 25 km (unos 30 minutos) al norte de Barcelona. Así podéis llegar hasta nosotros.",
+      intro:"Masia Egara está en plena naturaleza cerca de Terrassa, a unos 25 km (unos 30 minutos) al norte de Barcelona. Así podéis llegar hasta nosotras.",
       by_car_title:"En Coche",
       by_car_text:"La dirección es Carretera de Rellinars Km 2.4, 08225 Terrassa, Barcelona — <a href='https://maps.app.goo.gl/DeM8DD5ZF3uXXBXk6' target='_blank' rel='noopener'>abrir en Google Maps</a>. Hay un aparcamiento grande a unos 10 minutos a pie de la masía, por un camino de gravilla; si tenéis necesidades de accesibilidad, hay un aparcamiento más cercano disponible — avisadnos.",
       by_bus_title:"En Autobús",
-      by_bus_text:"Estamos organizando autobuses desde [Terrassa, punto de encuentro] hasta Masia Egara, con salida prevista sobre las [XX:XX] y servicio de vuelta al final de la noche. Más detalles cerca de la fecha.",
+      by_bus_text:"Todavía estamos organizando autobuses entre Barcelona/Terrassa y Masia Egara, tanto para la llegada como para la vuelta al final de la noche. Volved a mirar esta página más adelante: añadiremos aquí el punto de encuentro y los horarios en cuanto estén cerrados.",
       from_bcn_title:"Desde Barcelona",
       from_bcn_text:"Os recomendamos aterrizar en Barcelona. Desde allí podéis elegir alojaros en la propia Barcelona, en Terrassa o incluso en Sabadell, la ciudad más cercana, si disponéis de coche.<br><br>Para ir de Barcelona a Terrassa, coged los Ferrocarrils de la Generalitat (FGC), línea S1, desde Plaça Catalunya, Provença o Muntaner en el centro de la ciudad, y bajaos en Vallparadís Universitat o Terrassa Nord, de donde saldrán nuestros autobuses. Un trayecto cuesta 5,40€; recordad comprar un billete de Zona 3.<br><br>Un Uber desde Barcelona cuesta unos 50€ y también es una opción si preferís ir directamente.",
       map_label:"Encuéntranos en el mapa",
@@ -158,34 +156,32 @@ const translations = {
     },
     location:{
       title:"Masia Egara",
-      subtitle:"Donde nos daremos el sí quiero",
-      text1:"Masia Egara es una masía catalana a las afueras de Terrassa, rodeada de campos y jardines. Sus arcos de piedra, vigas de madera y patios abiertos hacen que parezca un lugar que llevaba tiempo esperando una celebración.",
-      text2:"Nos encantan los colores y los jardines exuberantes de este lugar, y estamos deseando compartir con vosotros una auténtica masía catalana.",
-      photo_note:"[Añade aquí fotos del lugar]",
-      features:[
-        {label:"Jardines", text:"Cuenta con el Jardín Rojo, el Jardín Verde y el jardín centenario."},
-        {label:"Espacio de ceremonia", text:"En el Bosque — un pequeño anfiteatro natural."},
-        {label:"Aparcamiento propio", text:"Disponible — confirmadlo con nosotros con antelación."},
-        {label:"Accesibilidad", text:"Aparcamiento más cercano a la masía disponible para quien lo necesite."}
-      ]
+      subtitle:"Una masía catalana con ocho siglos de historias",
+      q1:"¿Qué es una masía?",
+      text1:"Una masía es una <strong>casa de campo tradicional catalana</strong>, donde vivía y trabajaba la familia propietaria de las tierras. Hoy en día, muchas masías se han convertido en hoteles, restaurantes y espacios para celebraciones.",
+      q2:"¿Cuál es la historia de Masia Egara?",
+      text2:"Masia Egara toma su nombre de <strong>Egara, el antiguo nombre romano de Terrassa</strong>. La casa, conocida originalmente como Ca n'Amat, aparece ya en documentos de <strong>principios del siglo XIII</strong>, cuando dependía del monasterio de Montserrat. El edificio que veréis hoy es de <strong>principios del siglo XVI</strong>, y siempre ha pertenecido a la misma familia. Durante la Guerra Civil, esa familia <strong>escondió a republicanos entre sus muros</strong>.",
+      text2b:"Hoy se alza en el centro de <strong>300 hectáreas</strong> de campos y bosque, rodeada de <strong>4 hectáreas de jardines centenarios</strong> diseñados por la escuela del arquitecto <strong>Rubió i Tudurí</strong>, de los jardines privados mejor conservados de Cataluña. En su interior, las salas guardan muebles y obras de todas las épocas, desde tapices del siglo XVI hasta arte moderno.",
+      q3:"¿Por qué nos enamoró?",
+      text3:"Está cerca de donde es Elena (de hecho, justo al lado de donde estudió), guarda una <strong>historia de valentía</strong> y, como su propia historia, está llena de <strong>rincones secretos</strong>. Paseando por ella sentimos una especie de <strong>magia bohemia</strong>: la sensación de que en cualquier momento podía pasar algo fantástico."
     },
     faq:{
       title:"Preguntas Frecuentes",
       items:[
-        {q:"¿Tenéis lista de bodas?", a:"El mejor regalo es teneros allí con nosotros. Si aun así queréis colaborar con algo, una aportación para nuestra luna de miel significa para nosotros más que cualquier regalo físico — podéis hacerla por transferencia: IBAN [pendiente de añadir]."},
-        {q:"¿Cuál es el código de vestimenta?", a:"Elegante. Estaremos al aire libre, sobre hierba y gravilla, así que recomendamos calzado cómodo antes que tacones finos."},
-        {q:"¿Podemos ir en coche?", a:"Sí — consulta la página 'Cómo Llegar' para la dirección, las indicaciones y los detalles del aparcamiento."},
-        {q:"¿Hay transporte desde Terrassa?", a:"Sí, estamos organizando autobuses entre Terrassa y el lugar, tanto para la llegada como para la vuelta al final de la noche. Los horarios se compartirán más cerca de la fecha."},
-        {q:"¿Con quién puedo contactar si tengo dudas?", a:"Escribidnos cuando queráis — [Nombre]: [teléfono / email], [Nombre]: [teléfono / email]."},
-        {q:"¿Puedo traer a un +1?", a:"Lamentablemente no, por limitaciones de espacio. Si puedes venir acompañado/a, esa persona habrá recibido su propia invitación."},
-        {q:"¿Pueden venir niños?", a:"Si vuestra invitación incluye a vuestros hijos, ¡serán más que bienvenidos! Si no es así, esperamos que lo entendáis — con un espacio tan pequeño, tenemos que ajustar bien el número de invitados."}
+        {q:"¿Tenéis lista de bodas?", a:"El mejor regalo es teneros allí con nosotras. Si aun así queréis colaborar con algo, una aportación para nuestra luna de miel significa para nosotras más que cualquier regalo físico — podéis hacerla por transferencia: IBAN [pendiente de añadir].<br><br>Y como se nos da fatal guardar secretos, aquí tenéis tres fotos de nuestro destino. ¿Adivináis adónde vamos? No hay premio, solo el honor de acertar.", photos:3},
+        {q:"¿Cuál es el código de vestimenta?", a:"¡Venid como sois! Cualquier variante de elegante, de lo clásico a lo camp, será más que bienvenida. Usad cualquier color (vale, menos el blanco, que ya iremos dos así), textura o tejido: si a vosotros os encanta, a nosotras también."},
+        {q:"¿Podemos ir en coche?", a:"Sí: consultad la página 'Cómo Llegar' para la dirección, las indicaciones y los detalles del aparcamiento."},
+        {q:"¿Hay transporte desde Barcelona o Terrassa?", a:"Sí, estamos preparando autobuses entre Barcelona/Terrassa y Masia Egara, tanto para la llegada como para la vuelta al final de la noche. Todavía los estamos organizando, así que volved a mirar la web más adelante para ver el punto de encuentro y los horarios."},
+        {q:"¿Con quién puedo contactar si tengo dudas?", a:"¡Escribidnos cuando queráis! Elena López-Contreras: <a href='https://wa.me/33786571310' target='_blank' rel='noopener'>+33 7 86 57 13 10</a> (WhatsApp) o <a href='mailto:elenalcontreras@gmail.com'>elenalcontreras@gmail.com</a>."},
+        {q:"¿Puedo traer a un +1?", a:"Nos encantaría poder recibir a todo el mundo, pero el espacio es limitado y hemos soñado con una celebración pequeña e íntima, rodeadas de las personas más cercanas. Así que esta vez la invitación es solo para ti, ¡y estamos muy felices de que formes parte de nuestro día!"},
+        {q:"¿Pueden venir niños?", a:"Sí, y si el nivel de azúcar es lo bastante alto, sabemos que los veremos en la pista de baile. ¡Avisadnos con antelación si vienen vuestros peques!"}
       ]
     },
     footer:{ text:"Hecho con cariño. Nos vemos en Masia Egara." },
     rsvp:{
-      title:"Cuestionario previo boda Elena &amp; Vero",
+      title:"Cuestionario de boda de Elena &amp; Vero",
       intro_note:"Un formulario por persona, por favor, incluidos los niños. No podemos incluir acompañantes adicionales, así que si vienes con alguien, esa persona habrá recibido su propia invitación.",
-      text:"Estaremos encantados de contar con tu presencia en nuestro día especial. Confirma tu asistencia a continuación — necesitamos el cuestionario completado de cada persona para tener toda la información correcta y poder organizar bien la boda. Todo lo que compartas será tratado con total privacidad, de acuerdo con la Ley de Protección de Datos, y se usará únicamente para la organización de nuestro evento. ¡Gracias por tu ayuda, y recuerda enviarlo antes del 1 de diciembre!",
+      text:"Como ya habrás adivinado, si has recibido esta invitación es porque <strong>formas parte de nuestro pueblo</strong>: las personas con las que compartimos nuestra vida. No podríamos imaginar una celebración sin quienes hacen que valga la pena celebrar. Por eso, vengas de cerca o de muy, muy lejos, <strong>nos encantará tenerte con nosotras</strong> en nuestro día especial.<br><br>El formulario del enlace de abajo nos ayudará a <strong>organizar todo el día</strong> y a <strong>saber si puedes venir</strong>. Necesitamos recibir el cuestionario completado de cada persona para tener toda la información correcta. Todo lo que compartas será tratado con <strong>total privacidad</strong>, de acuerdo con la normativa de protección de datos, y se usará únicamente para organizar nuestro evento.<br><br><strong>Un formulario por persona.</strong> Si tienes hijos, <strong>rellena también uno para cada uno de ellos</strong>. Nuestra lista de invitados es bastante pequeña, así que cada invitado ha recibido <strong>su propia invitación personal</strong>: si viene alguien querido para ti, ¡también tendrá una con su nombre!<br><br>¡Gracias por tu ayuda, y recuerda enviarlo <strong>antes del 1 de diciembre</strong>!",
       button:"Abrir el formulario"
     }
   },
@@ -196,34 +192,34 @@ const translations = {
     brand:{ short:"V&amp;E" },
     nav:{ home:"Inici", event:"L'Esdeveniment", getting:"Com Venir", location:"El Lloc", faq:"Preguntes", rsvp:"RSVP" },
     home:{
-      eyebrow:"Ens casem",
+      eyebrow:"Què??? Ens casem?????",
       names:"Veronica &amp; Elena",
-      date:"24 Abril, 2027",
+      date:"24 d'abril de 2027",
       venue:"Masia Egara · Terrassa, Catalunya",
       welcome_title:"Benvinguts",
-      welcome_text:"Després de tot aquest temps, per fi ho podem dir en veu alta: ens casem, i volem que estigueu amb nosaltres. Sota els antics arcs de pedra de Masia Egara, envoltats de les persones que més estimem, celebrarem un dia que fa temps que somiem. Feu servir el menú de dalt per trobar tot el que necessiteu saber: l'horari, com venir, l'allotjament i les respostes a les preguntes que sabem que us fareu.",
+      welcome_text:"Qui ho hauria dit que faríem això? No, no parlem de tancar l'Elena en un búnquer per simular la Lluna, encara que fos el primer que vau pensar. Això sí, estem als núvols. Qui ho hauria dit que ens casaríem? Potser vosaltres sí, i nosaltres també, després de decidir-ho una tarda boja de desembre. Per sobre de tot, vam decidir que volíem celebrar amb orgull el nostre amor amb vosaltres, les persones que esteu llegint aquest missatge. Al cap i a la fi, per criar dues lesbianes cal tot un poble. I quin millor lloc per reunir aquest poble que Espanya, un dels primers països del món a permetre que una celebració com aquesta pogués existir? Així doncs, per a l'ocasió, us portem a prop de Barcelona, la terra de l'Elena. Més concretament, a un lloc meravellós anomenat Masia Egara. Moltes coses ens van atraure d'aquest lloc, i us les anirem desvetllant pas a pas a través d'aquesta web, fins al dia del casament.",
       countdown_title:"Compte enrere per al gran dia",
       days:"Dies", hours:"Hores", minutes:"Minuts", seconds:"Segons",
       explore:"Descobrir la celebració"
     },
     event:{
       title:"La Celebració",
-      intro:"Així es desenvoluparà el dia. Cada moment té el seu lloc i la seva pròpia llum, des dels primers vots fins a l'últim ball.",
+      intro:"Com serà el nostre dia? Gràcies a aquest lloc màgic que és la Masia Egara, anirem passant per diferents racons, cadascun amb el seu propi ambient. Junts veurem com les últimes llums del dia s'amaguen darrere els arbres i ballarem sota la llum de les estrelles més llunyanes.",
       items:[
-        {time:"17:00", title:"Cerimònia", place:"Bosque, Masia Egara", text:"Ens trobarem entre els arbres per a la cerimònia, oficiada per Pau Torner. Intenteu arribar almenys mitja hora abans, cap a les 16:30. La cerimònia en si durarà aproximadament una hora."},
-        {time:"18:30", title:"Aperitiu", place:"Jardín Rojo, Masia Egara", text:"Còctel i cuina catalana del Delta de l'Ebre, a càrrec de Xerta Catering, amb fotos i vídeo en paral·lel."},
-        {time:"20:30", title:"Sopar", place:"Era, Masia Egara", text:"Sopar assegut a l'Era, just davant la masia, rematat amb pastís!"},
-        {time:"23:30", title:"Festa", place:"Bodega, Masia Egara", text:"Hora de festa! A ballar a la Bodega, a l'interior."}
+        {time:"17:00", title:"Cerimònia", place:"Bosque, Masia Egara", text:"Per a la cerimònia ens reunirem en un petit bosc. Aquest moment, el més íntim del dia, durarà aproximadament una hora. Si podeu, intenteu arribar almenys mitja hora abans, cap a les 16:30. Ens veiem entre els arbres!"},
+        {time:"18:30", title:"Aperitiu", place:"Jardín Rojo, Masia Egara", text:"Del bosc passarem a un jardí tranquil, on prendrem alguna cosa i tastarem cuina catalana del Delta de l'Ebre. Volem compartir amb vosaltres una mica de la terra on serem!"},
+        {time:"20:30", title:"Sopar", place:"Era, Masia Egara", text:"Quan caigui la nit, ens acostarem als murs de la masia. Per sopar seurem a l'Era, just davant de l'entrada de la masia!"},
+        {time:"23:30", title:"Festa", place:"Bodega, Masia Egara", text:"Per a l'última part del casament, per fi creuarem les portes de la masia. Hora de ballar fins que el cos aguanti, a l'interior, a la Bodega!"}
       ],
-      note:"Aquests horaris són tan precisos com podem — us avisarem si hi ha algun canvi."
+      note:"Aquests horaris són tan precisos com podem; us avisarem si hi ha algun canvi."
     },
     getting:{
       title:"Com Venir",
-      intro:"Masia Egara es troba enmig de la natura a prop de Terrassa, a uns 25 km (uns 30 minuts) al nord de Barcelona. Així podeu arribar fins a nosaltres.",
+      intro:"La Masia Egara es troba enmig de la natura a prop de Terrassa, a uns 25 km (uns 30 minuts) al nord de Barcelona. Així podeu arribar fins a nosaltres.",
       by_car_title:"Amb Cotxe",
       by_car_text:"L'adreça és Carretera de Rellinars Km 2.4, 08225 Terrassa, Barcelona — <a href='https://maps.app.goo.gl/DeM8DD5ZF3uXXBXk6' target='_blank' rel='noopener'>obrir a Google Maps</a>. Hi ha un aparcament gran a uns 10 minuts a peu de la masia, per un camí de grava; si teniu necessitats d'accessibilitat, hi ha un aparcament més proper disponible; no dubteu a contactar amb nosaltres.",
       by_bus_title:"Amb Autobús",
-      by_bus_text:"Estem organitzant autobusos des de [Terrassa, punt de trobada] fins a Masia Egara, amb sortida prevista cap a les [XX:XX] i servei de tornada a final de la nit. Més detalls a prop de la data.",
+      by_bus_text:"Encara estem organitzant autobusos entre Barcelona/Terrassa i la Masia Egara, tant per a l'arribada com per a la tornada a final de la nit. Torneu a mirar aquesta pàgina més endavant: hi afegirem el punt de trobada i els horaris tan aviat com estiguin tancats.",
       from_bcn_title:"Des de Barcelona",
       from_bcn_text:"Us recomanem aterrar a Barcelona. Des d'allà podeu triar allotjament a la mateixa Barcelona, a Terrassa o, fins i tot, a Sabadell, la ciutat més propera, si teniu cotxe.<br><br>Per anar de Barcelona a Terrassa, agafeu els Ferrocarrils de la Generalitat (FGC), línia S1, des de Plaça Catalunya, Provença o Muntaner al centre de la ciutat, i baixeu a Vallparadís Universitat o Terrassa Nord, d'on sortiran els nostres autobusos. Un trajecte costa 5,40€; recordeu comprar un bitllet de Zona 3.<br><br>Un Uber des de Barcelona costa uns 50€ i és una altra opció per arribar directament al lloc.",
       map_label:"Troba'ns al mapa",
@@ -239,8 +235,8 @@ const translations = {
         {tag:"Hotel", name:"Holiday Inn Express & Suites Barcelona–Sabadell", dist:"Des de 100€/nit", text:"Sabadell, al costat d'un centre comercial. Nou, modern i amb esmorzar inclòs.", group:"Terrassa", url:"https://www.ihg.com/holidayinnexpress/hotels/us/en/sabadell/bcnbs/hoteldetail"},
         {tag:"Hotel", name:"Travelodge Barcelona del Vallès", dist:"Des de 60€/nit", text:"Barberà del Vallès, just al costat de l'autopista AP-7.", group:"Terrassa", url:"https://www.travelodge.es/en/hotels-barcelona/valles"},
         {tag:"Hotel", name:"Hotel Exe Campus", dist:"Des de 60€/nit", text:"Cerdanyola del Vallès, al campus de la UAB.", group:"Terrassa", url:"https://www.hotelexecampus.com/"},
-        {tag:"Camping", name:"Camping La Tatgera", dist:"Des de 20€/nit", text:"Talamanca, just a la vora del parc natural de Sant Llorenç del Munt.", group:"Terrassa", url:"https://campingtalamanca.com/"},
-        {tag:"Camping", name:"Camping El Pasqualet", dist:"Des de 25€/persona/nit", text:"Caldes de Montbui, un càmping familiar amb piscina.", group:"Terrassa", url:"https://elpasqualet.com/en/"},
+        {tag:"Càmping", name:"Camping La Tatgera", dist:"Des de 20€/nit", text:"Talamanca, just a la vora del parc natural de Sant Llorenç del Munt.", group:"Terrassa", url:"https://campingtalamanca.com/"},
+        {tag:"Càmping", name:"Camping El Pasqualet", dist:"Des de 25€/persona/nit", text:"Caldes de Montbui, un càmping familiar amb piscina.", group:"Terrassa", url:"https://elpasqualet.com/en/"},
         {tag:"Hotel", name:"Hotel Cram", dist:"Des de 138€/nit", text:"Eixample, un hotel boutique centrat en el disseny.", group:"Barcelona", url:"https://hotelcram.com/en/"},
         {tag:"Hotel", name:"Yurbban Trafalgar Hotel", dist:"Des de 130€/nit", text:"El Born, un hotel boutique amb piscina a la terrassa i vistes panoràmiques.", group:"Barcelona", url:"https://trafalgar.yurbban.com/"},
         {tag:"Hotel", name:"Room Mate Emma", dist:"Des de 170€/nit", text:"Eixample, un hotel de disseny futurista a tocar del Passeig de Gràcia.", group:"Barcelona", url:"https://room-matehotels.com/en/emma/"},
@@ -253,34 +249,32 @@ const translations = {
     },
     location:{
       title:"Masia Egara",
-      subtitle:"On ens direm el sí vull",
-      text1:"Masia Egara és una masia catalana als afores de Terrassa, envoltada de camps i jardins. Els seus arcs de pedra, les bigues de fusta i els patis oberts fan que sembli un lloc que feia temps que esperava una celebració.",
-      text2:"Ens encanten els colors i els jardins exuberants d'aquest lloc, i tenim moltes ganes de compartir amb vosaltres una autèntica masia catalana.",
-      photo_note:"[Afegeix aquí fotos del lloc]",
-      features:[
-        {label:"Jardins", text:"Compta amb el Jardín Rojo, el Jardín Verde i el jardí centenari."},
-        {label:"Espai de cerimònia", text:"Al Bosc: un petit amfiteatre natural."},
-        {label:"Aparcament propi", text:"Disponible, us demanem que ho confirmeu amb nosaltres amb antelació."},
-        {label:"Accessibilitat", text:"Aparcament més proper a la masia disponible per a qui ho necessiti."}
-      ]
+      subtitle:"Una masia catalana amb vuit segles d'històries",
+      q1:"Què és una masia?",
+      text1:"Una masia és una <strong>casa de pagès tradicional catalana</strong>, on vivia i treballava la família propietària de les terres. Avui dia, moltes masies s'han convertit en hotels, restaurants i espais per a celebracions.",
+      q2:"Quina és la història de la Masia Egara?",
+      text2:"La Masia Egara pren el nom d'<strong>Ègara, l'antic nom romà de Terrassa</strong>. La casa, coneguda originalment com a Ca n'Amat, ja apareix en documents de <strong>principis del segle XIII</strong>, quan depenia del monestir de Montserrat. L'edifici que veureu avui és de <strong>principis del segle XVI</strong>, i sempre ha pertangut a la mateixa família. Durant la Guerra Civil, aquella família <strong>va amagar republicans entre les seves parets</strong>.",
+      text2b:"Avui s'alça al centre de <strong>300 hectàrees</strong> de camps i bosc, envoltada de <strong>4 hectàrees de jardins centenaris</strong> dissenyats per l'escola de l'arquitecte <strong>Rubió i Tudurí</strong>, dels jardins privats més ben conservats de Catalunya. A dins, les sales guarden mobles i obres de totes les èpoques, des de tapissos del segle XVI fins a art modern.",
+      q3:"Per què ens en vam enamorar?",
+      text3:"És a prop d'on és l'Elena (de fet, just al costat d'on va estudiar), guarda una <strong>història de valentia</strong> i, com la seva pròpia història, és plena de <strong>racons secrets</strong>. Passejant-hi vam sentir una mena de <strong>màgia bohèmia</strong>: la sensació que en qualsevol moment hi podia passar alguna cosa fantàstica."
     },
     faq:{
       title:"Preguntes Freqüents",
       items:[
-        {q:"Teniu llista de noces?", a:"El millor regal és que hi sigueu amb nosaltres. Si tot i així voleu col·laborar amb alguna cosa, una aportació per a la nostra lluna de mel significa per a nosaltres més que qualsevol regal físic; ho podeu fer per transferència: IBAN [pendent d'afegir]."},
-        {q:"Quin és el codi de vestimenta?", a:"Elegant. Serem a l'aire lliure, sobre gespa i grava, així que recomanem calçat còmode abans que talons fins."},
-        {q:"Podem venir amb cotxe?", a:"Sí — consulteu la pàgina 'Com Venir' per a l'adreça, les indicacions i els detalls de l'aparcament."},
-        {q:"Hi ha transport des de Terrassa?", a:"Sí, estem organitzant autobusos entre Terrassa i el lloc, tant per a l'arribada com per a la tornada a final de la nit. Els horaris es compartiran més a prop de la data."},
-        {q:"Amb qui puc contactar si tinc dubtes?", a:"Podeu contactar amb nosaltres quan vulgueu — [Nom]: [telèfon / email], [Nom]: [telèfon / email]."},
-        {q:"Puc portar un acompanyant?", a:"Malauradament no, per limitacions d'espai. Si podeu venir acompanyats, aquesta persona haurà rebut la seva pròpia invitació."},
-        {q:"Poden venir infants?", a:"Si la vostra invitació inclou els vostres fills, seran més que benvinguts! Si no és així, esperem que ho entengueu — amb un espai tan reduït, hem d'ajustar bé el nombre de convidats."}
+        {q:"Teniu llista de noces?", a:"El millor regal és que hi sigueu amb nosaltres. Si tot i així voleu col·laborar amb alguna cosa, una aportació per a la nostra lluna de mel significa per a nosaltres més que qualsevol regal físic; ho podeu fer per transferència: IBAN [pendent d'afegir].<br><br>I com que som un desastre guardant secrets, aquí teniu tres fotos del nostre destí. Endevineu on anem? No hi ha premi, només l'honor d'encertar-ho.", photos:3},
+        {q:"Quin és el codi de vestimenta?", a:"Veniu com sou! Qualsevol variant d'elegant, del clàssic al camp, serà més que benvinguda. Feu servir qualsevol color (d'acord, menys el blanc, que ja n'anirem dues així), textura o teixit: si a vosaltres us encanta, a nosaltres també."},
+        {q:"Podem venir amb cotxe?", a:"Sí: consulteu la pàgina 'Com Venir' per a l'adreça, les indicacions i els detalls de l'aparcament."},
+        {q:"Hi ha transport des de Barcelona o Terrassa?", a:"Sí, estem preparant autobusos entre Barcelona/Terrassa i la Masia Egara, tant per a l'arribada com per a la tornada a final de la nit. Encara els estem organitzant, així que torneu a mirar la web més endavant per veure el punt de trobada i els horaris."},
+        {q:"Amb qui puc contactar si tinc dubtes?", a:"Escriviu-nos quan vulgueu! Elena López-Contreras: <a href='https://wa.me/33786571310' target='_blank' rel='noopener'>+33 7 86 57 13 10</a> (WhatsApp) o <a href='mailto:elenalcontreras@gmail.com'>elenalcontreras@gmail.com</a>."},
+        {q:"Puc portar un acompanyant?", a:"Ens encantaria poder rebre tothom, però l'espai és limitat i hem somiat amb una celebració petita i íntima, envoltades de les persones més properes. Així que aquesta vegada la invitació és només per a tu, i estem molt contentes que formis part del nostre dia!"},
+        {q:"Poden venir infants?", a:"Sí, i si el nivell de sucre és prou alt, sabem que els veurem a la pista de ball. Aviseu-nos amb antelació si venen els vostres petits!"}
       ]
     },
-    footer:{ text:"Fet amb estimació. Ens veiem a Masia Egara." },
+    footer:{ text:"Fet amb amor. Ens veiem a la Masia Egara." },
     rsvp:{
-      title:"Qüestionari previ al casament Elena &amp; Vero",
+      title:"Qüestionari del casament de l'Elena &amp; la Vero",
       intro_note:"Un formulari per persona, si us plau, inclosos els infants. No podem incloure acompanyants addicionals, així que si véns amb algú, aquesta persona haurà rebut la seva pròpia invitació.",
-      text:"Estarem encantats de comptar amb la teva presència en el nostre dia especial. Confirma la teva assistència aquí sota — necessitem el qüestionari emplenat de cada persona per tenir tota la informació correcta i poder organitzar bé el casament. Tot el que comparteixis serà tractat amb total privacitat, d'acord amb la Llei de Protecció de Dades, i s'utilitzarà únicament per a l'organització del nostre esdeveniment. Gràcies per la teva ajuda, i recorda que ho has de tornar abans de l'1 de desembre!",
+      text:"Com ja deus haver endevinat, si has rebut aquesta invitació és perquè <strong>formes part del nostre poble</strong>: les persones amb qui compartim la nostra vida. No podríem imaginar una celebració sense les persones que fan que valgui la pena celebrar. Per això, vinguis de prop o de molt, molt lluny, <strong>ens encantarà tenir-te amb nosaltres</strong> en el nostre dia especial.<br><br>El formulari de l'enllaç de sota ens ajudarà a <strong>organitzar tot el dia</strong> i a <strong>saber si pots venir</strong>. Necessitem rebre el qüestionari emplenat de cada persona per tenir tota la informació correcta. Tot el que comparteixis serà tractat amb <strong>total privacitat</strong>, d'acord amb la normativa de protecció de dades, i s'utilitzarà únicament per organitzar el nostre esdeveniment.<br><br><strong>Un formulari per persona.</strong> Si tens fills, <strong>emplena'n també un per a cadascun</strong>. La nostra llista de convidats és força petita, així que cada convidat ha rebut <strong>la seva pròpia invitació personal</strong>: si ve algú estimat per a tu, també en tindrà una amb el seu nom!<br><br>Gràcies per la teva ajuda, i recorda enviar-lo <strong>abans de l'1 de desembre</strong>!",
       button:"Obrir el formulari"
     }
   },
@@ -291,34 +285,34 @@ const translations = {
     brand:{ short:"V&amp;E" },
     nav:{ home:"Accueil", event:"L'Événement", getting:"Comment Venir", location:"Le Lieu", faq:"FAQ", rsvp:"RSVP" },
     home:{
-      eyebrow:"Nous nous marions",
+      eyebrow:"Quoi ??? On se marie ?????",
       names:"Veronica &amp; Elena",
-      date:"24 Avril, 2027",
+      date:"24 avril 2027",
       venue:"Masia Egara · Terrassa, Catalogne",
       welcome_title:"Bienvenue",
-      welcome_text:"Après tout ce temps, nous pouvons enfin le dire à voix haute : nous nous marions, et nous voulons vous avoir à nos côtés. Sous les vieilles arches de pierre de Masia Egara, entourés des personnes que nous aimons le plus, nous célébrerons un jour dont nous rêvons depuis longtemps. Utilisez le menu en haut de la page pour tout ce que vous devez savoir : le programme, comment venir, où loger, et les réponses aux questions que vous vous posez sûrement.",
+      welcome_text:"Qui aurait cru qu'on ferait ça ? Non, pas enfermer Elena dans un bunker pour simuler la Lune, même si c'était votre première idée. En revanche, nous sommes sur un petit nuage. Qui aurait cru qu'on se marierait ? Peut-être vous, et nous aussi, après l'avoir décidé un après-midi un peu fou de décembre. Avant tout, nous avons décidé que nous voulions célébrer fièrement notre amour avec vous, les personnes qui lisent ce message. Après tout, pour élever deux lesbiennes, il faut tout un village. Et quel meilleur endroit pour réunir ce village que l'Espagne, l'un des tout premiers pays au monde à permettre qu'une telle célébration puisse simplement exister ? Alors, pour l'occasion, nous vous emmenons près de Barcelone, la ville d'Elena. Plus précisément, dans un lieu merveilleux appelé Masia Egara. Beaucoup de choses nous ont attirées vers ce lieu, et nous vous les dévoilerons petit à petit sur ce site, jusqu'au jour du mariage.",
       countdown_title:"Compte à rebours avant le grand jour",
       days:"Jours", hours:"Heures", minutes:"Minutes", seconds:"Secondes",
       explore:"Découvrir la célébration"
     },
     event:{
       title:"La Célébration",
-      intro:"Voici comment la journée se déroulera. Chaque moment a sa place et sa propre lumière, des premiers vœux à la dernière danse.",
+      intro:"À quoi ressemblera notre journée ? Grâce à ce lieu magique qu'est la Masia Egara, nous passerons par différents espaces, chacun avec sa propre atmosphère. Ensemble, nous regarderons les dernières lueurs du jour se cacher derrière les arbres et danserons sous la lumière des étoiles les plus lointaines.",
       items:[
-        {time:"17h00", title:"Cérémonie", place:"Bosque, Masia Egara", text:"Nous nous retrouverons parmi les arbres pour la cérémonie, célébrée par Pau Torner. Merci d'essayer d'arriver au moins trente minutes à l'avance, vers 16h30. La cérémonie durera environ une heure."},
-        {time:"18h30", title:"Cocktail", place:"Jardín Rojo, Masia Egara", text:"Boissons et cuisine catalane du Delta de l'Ebre, préparées par Xerta Catering, avec photos et vidéo en simultané."},
-        {time:"20h30", title:"Dîner", place:"Era, Masia Egara", text:"Dîner assis à l'Era, juste devant la masia — le tout couronné d'un gâteau !"},
-        {time:"23h30", title:"Fête", place:"Bodega, Masia Egara", text:"Place à la fête ! Direction la Bodega, en intérieur, pour danser."}
+        {time:"17h00", title:"Cérémonie", place:"Bosque, Masia Egara", text:"Pour la cérémonie, nous nous retrouverons dans une toute petite forêt. Ce moment, le plus intime de la journée, durera environ une heure. Si vous le pouvez, essayez d'arriver au moins une demi-heure à l'avance, vers 16h30. Rendez-vous parmi les arbres !"},
+        {time:"18h30", title:"Cocktail", place:"Jardín Rojo, Masia Egara", text:"De la forêt à un jardin paisible, nous prendrons un verre et goûterons la cuisine catalane du Delta de l'Ebre. Nous espérons partager avec vous un petit bout de la région où nous serons !"},
+        {time:"20h30", title:"Dîner", place:"Era, Masia Egara", text:"À la tombée de la nuit, nous nous rapprocherons des murs de la masia. Pour le dîner, nous nous installerons sur l'Era, juste devant l'entrée de la masia !"},
+        {time:"23h30", title:"Fête", place:"Bodega, Masia Egara", text:"Pour la dernière partie du mariage, nous franchirons enfin les portes de la masia. Place à la danse jusqu'au bout de la nuit, à l'intérieur, dans la Bodega !"}
       ],
-      note:"Ces horaires sont aussi précis que possible — nous vous préviendrons en cas de changement."
+      note:"Ces horaires sont aussi précis que possible ; nous vous préviendrons en cas de changement."
     },
     getting:{
       title:"Comment Venir",
-      intro:"Masia Egara se trouve à la campagne près de Terrassa, à environ 25 km (soit environ 30 minutes) au nord de Barcelone. Voici comment nous rejoindre.",
+      intro:"La Masia Egara se trouve à la campagne près de Terrassa, à environ 25 km (soit environ 30 minutes) au nord de Barcelone. Voici comment nous rejoindre.",
       by_car_title:"En Voiture",
       by_car_text:"L'adresse est Carretera de Rellinars Km 2.4, 08225 Terrassa, Barcelone — <a href='https://maps.app.goo.gl/DeM8DD5ZF3uXXBXk6' target='_blank' rel='noopener'>ouvrir dans Google Maps</a>. Un grand parking se trouve à environ 10 minutes à pied du lieu, sur un chemin de gravier ; si vous avez des besoins d'accessibilité, un parking plus proche est disponible ; n'hésitez pas à nous contacter.",
       by_bus_title:"En Bus",
-      by_bus_text:"Nous organisons des navettes depuis [Terrassa, point de rencontre] jusqu'à Masia Egara, avec un départ prévu vers [XXhXX] et un retour en fin de soirée. Plus de détails à l'approche de la date.",
+      by_bus_text:"Nous sommes encore en train d'organiser des navettes entre Barcelone/Terrassa et la Masia Egara, à l'aller comme au retour en fin de soirée. Revenez sur cette page plus tard : nous y ajouterons le point de rendez-vous et les horaires dès qu'ils seront fixés.",
       from_bcn_title:"Depuis Barcelone",
       from_bcn_text:"Nous vous recommandons d'atterrir à Barcelone. Vous pourrez ensuite choisir de loger à Barcelone même, à Terrassa, ou même à Sabadell, la ville la plus proche, si vous avez une voiture.<br><br>Pour aller de Barcelone à Terrassa, prenez les Ferrocarrils de la Generalitat (FGC), ligne S1, depuis Plaça Catalunya, Provença ou Muntaner, dans le centre de la ville, et descendez à Vallparadís Universitat ou Terrassa Nord, d'où partiront nos navettes. Un aller simple coûte 5,40€ ; pensez à acheter un billet Zona 3.<br><br>Un Uber depuis Barcelone coûte environ 50€ et reste aussi une option si vous préférez y aller directement.",
       map_label:"Notre emplacement sur la carte",
@@ -348,34 +342,32 @@ const translations = {
     },
     location:{
       title:"Masia Egara",
-      subtitle:"Là où nous nous dirons oui",
-      text1:"Masia Egara est une ferme catalane traditionnelle aux portes de Terrassa, entourée de champs et de jardins. Ses arches de pierre, ses poutres en bois et ses cours ouvertes donnent l'impression d'un lieu qui n'attendait qu'une célébration.",
-      text2:"Nous adorons les couleurs et les jardins luxuriants de ce lieu, et nous avons hâte de partager avec vous une véritable masia catalane.",
-      photo_note:"[Ajoutez ici des photos du lieu]",
-      features:[
-        {label:"Jardins", text:"Le domaine compte le Jardín Rojo, le Jardín Verde et le jardin centenaire."},
-        {label:"Espace cérémonie", text:"Dans le Bosque — un petit amphithéâtre naturel."},
-        {label:"Parking sur place", text:"Disponible — merci de nous le confirmer à l'avance."},
-        {label:"Accessibilité", text:"Un parking plus proche du lieu est disponible pour les personnes qui en ont besoin."}
-      ]
+      subtitle:"Une ferme catalane riche de huit siècles d'histoires",
+      q1:"Qu'est-ce qu'une masia ?",
+      text1:"Une masia est une <strong>ferme catalane traditionnelle</strong>, où vivait et travaillait la famille propriétaire des terres. Aujourd'hui, beaucoup de masias ont été transformées en hôtels, en restaurants et en lieux de réception.",
+      q2:"Quelle est l'histoire de la Masia Egara ?",
+      text2:"La Masia Egara tient son nom d'<strong>Egara, l'ancien nom romain de Terrassa</strong>. La maison, connue à l'origine sous le nom de Ca n'Amat, apparaît déjà dans des documents du <strong>début du XIIIe siècle</strong>, lorsqu'elle dépendait du monastère de Montserrat. Le bâtiment que vous découvrirez date du <strong>début du XVIe siècle</strong>, et il a toujours appartenu à la même famille. Pendant la guerre civile espagnole, cette famille <strong>a caché des républicains entre ses murs</strong>.",
+      text2b:"Aujourd'hui, elle se dresse au cœur de <strong>300 hectares</strong> de champs et de forêt, entourée de <strong>4 hectares de jardins centenaires</strong> conçus par l'école de l'architecte <strong>Rubió i Tudurí</strong>, parmi les jardins privés les mieux conservés de Catalogne. À l'intérieur, ses salles abritent des meubles et des œuvres de toutes les époques, des tapisseries du XVIe siècle à l'art moderne.",
+      q3:"Pourquoi avons-nous eu un coup de cœur ?",
+      text3:"Elle est tout près de là où Elena a grandi (juste à côté de là où elle a fait ses études, en fait), elle porte une <strong>histoire de courage</strong> et, à l'image de son histoire, elle regorge de <strong>recoins secrets</strong>. En nous y promenant, nous avons ressenti une sorte de <strong>magie bohème</strong> : l'impression que quelque chose de fantastique pouvait arriver à tout moment."
     },
     faq:{
       title:"Questions Fréquentes",
       items:[
-        {q:"Vous avez une liste de mariage ?", a:"Le plus beau cadeau, c'est votre présence à nos côtés. Si vous souhaitez tout de même contribuer à quelque chose, un geste pour notre lune de miel compte plus pour nous qu'un cadeau physique — vous pouvez le faire par virement : IBAN [à ajouter]."},
-        {q:"Quelle est la tenue de rigueur ?", a:"Élégante. Nous serons en extérieur, sur herbe et gravier, nous conseillons donc des chaussures confortables plutôt que des talons fins."},
-        {q:"On peut venir en voiture ?", a:"Oui — consultez la page « Comment Venir » pour l'adresse, l'itinéraire et les détails du stationnement."},
-        {q:"Il y a un transport depuis Terrassa ?", a:"Oui, nous organisons des navettes entre Terrassa et le lieu, aussi bien à l'arrivée qu'au retour en fin de soirée. Les horaires seront communiqués à l'approche de la date."},
-        {q:"Qui contacter en cas de question ?", a:"Vous pouvez nous écrire quand vous voulez — [Nom] : [téléphone / email], [Nom] : [téléphone / email]."},
-        {q:"Je peux venir accompagné(e) ?", a:"Malheureusement non, en raison de contraintes de place. Si vous pouvez venir accompagné(e), cette personne aura reçu sa propre invitation."},
-        {q:"Les enfants sont les bienvenus ?", a:"Si votre invitation inclut vos enfants, ils seront les bienvenus ! Si ce n'est pas le cas, nous espérons que vous comprendrez — le lieu étant assez restreint, nous devons limiter le nombre d'invités."}
+        {q:"Vous avez une liste de mariage ?", a:"Le plus beau cadeau, c'est votre présence à nos côtés. Si vous souhaitez tout de même contribuer à quelque chose, un geste pour notre lune de miel compte plus pour nous qu'un cadeau physique — vous pouvez le faire par virement : IBAN [à ajouter].<br><br>Et comme nous sommes nulles pour garder un secret, voici trois photos de notre destination. Saurez-vous deviner où nous partons ? Rien à gagner, à part la gloire.", photos:3},
+        {q:"Quelle est la tenue de rigueur ?", a:"Venez comme vous êtes ! Toutes les variations d'élégance, du chic au camp, sont plus que bienvenues. Portez la couleur que vous voulez (bon, sauf le blanc, nous serons déjà deux), la texture ou le tissu de votre choix : tant que vous l'aimez, nous l'aimerons aussi."},
+        {q:"On peut venir en voiture ?", a:"Oui : consultez la page « Comment Venir » pour l'adresse, l'itinéraire et les détails du stationnement !"},
+        {q:"Il y a un transport depuis Barcelone ou Terrassa ?", a:"Oui, nous préparons des navettes entre Barcelone/Terrassa et la Masia Egara, à l'aller comme au retour en fin de soirée. Nous sommes encore en train de les organiser, alors revenez sur le site plus tard pour le point de rendez-vous et les horaires."},
+        {q:"Qui contacter en cas de question ?", a:"Écrivez-nous quand vous voulez ! Elena López-Contreras : <a href='https://wa.me/33786571310' target='_blank' rel='noopener'>+33 7 86 57 13 10</a> (WhatsApp) ou <a href='mailto:elenalcontreras@gmail.com'>elenalcontreras@gmail.com</a>."},
+        {q:"Je peux venir accompagné(e) ?", a:"Nous aimerions accueillir tout le monde, mais la place est limitée et nous avons rêvé d'une célébration petite et intime, entourées de nos proches. Alors cette fois, l'invitation est juste pour vous, et nous sommes tellement heureuses que vous fassiez partie de notre journée !"},
+        {q:"Les enfants sont les bienvenus ?", a:"Oui, et si le taux de sucre est assez élevé, nous savons que nous les verrons sur la piste de danse. Prévenez-nous à l'avance si vos enfants viennent !"}
       ]
     },
-    footer:{ text:"À bientôt à Masia Egara !" },
+    footer:{ text:"Fait avec amour. À bientôt à la Masia Egara !" },
     rsvp:{
-      title:"Questionnaire avant le mariage Elena &amp; Vero",
+      title:"Questionnaire du mariage d'Elena &amp; Vero",
       intro_note:"Un formulaire par personne, s'il vous plaît, enfants compris. Nous ne pouvons pas accueillir d'accompagnant supplémentaire — si vous venez avec quelqu'un, cette personne aura reçu sa propre invitation.",
-      text:"Nous serions ravis de vous avoir à nos côtés pour notre jour spécial. Merci de confirmer votre présence dans le formulaire plus bas — nous avons besoin du questionnaire complété de chaque personne pour avoir toutes les bonnes informations et bien organiser le mariage. Tout ce que vous partagerez sera traité en toute confidentialité, conformément à la législation sur la protection des données, et utilisé uniquement pour l'organisation de notre événement. Merci pour votre aide, et pensez à nous le renvoyer avant le 1er décembre !",
+      text:"Vous l'aurez sans doute deviné : si vous avez reçu cette invitation, c'est que <strong>vous faites partie de notre village</strong>, les personnes avec qui nous partageons nos vies. Nous ne pourrions pas imaginer faire la fête sans celles et ceux qui lui donnent tout son sens. Alors, que vous veniez de près ou de très, très loin, <strong>nous serions ravies de vous avoir à nos côtés</strong> pour notre grand jour.<br><br>Le formulaire accessible via le lien ci-dessous nous aidera à <strong>organiser toute la journée</strong> et à <strong>savoir si vous pourrez être présent(e)</strong>. Nous avons besoin du questionnaire complété de chaque personne pour avoir toutes les bonnes informations. Tout ce que vous partagerez sera traité en <strong>toute confidentialité</strong>, conformément à la législation sur la protection des données, et utilisé uniquement pour l'organisation de notre événement.<br><br><strong>Un formulaire par personne.</strong> Si vous avez des enfants, <strong>remplissez-en aussi un pour chacun d'eux</strong>. Notre liste d'invités est assez restreinte, donc chaque invité a reçu <strong>sa propre invitation personnelle</strong> : si une personne qui vous est chère nous rejoint, elle en aura aussi une à son nom !<br><br>Merci pour votre aide, et pensez à nous le renvoyer <strong>avant le 1er décembre</strong> !",
       button:"Ouvrir le formulaire"
     }
   },
@@ -386,34 +378,34 @@ const translations = {
     brand:{ short:"V&amp;E" },
     nav:{ home:"Home", event:"L'Evento", getting:"Come Arrivare", location:"Il Luogo", faq:"FAQ", rsvp:"RSVP" },
     home:{
-      eyebrow:"Ci sposiamo",
+      eyebrow:"Cosa??? Ci sposiamo?????",
       names:"Veronica &amp; Elena",
-      date:"24 Aprile, 2027",
+      date:"24 aprile 2027",
       venue:"Masia Egara · Terrassa, Catalogna",
       welcome_title:"Benvenuti",
-      welcome_text:"Dopo tutto questo tempo, finalmente possiamo dirlo ad alta voce: ci sposiamo, e vogliamo avervi con noi. Sotto gli antichi archi in pietra di Masia Egara, circondati dalle persone che amiamo di più, festeggeremo un giorno che sogniamo da tempo. Usate il menu qui sopra per trovare tutto ciò che vi serve sapere: il programma, come arrivare, dove alloggiare e le risposte alle domande che sappiamo vi farete.",
+      welcome_text:"Chi l'avrebbe mai detto che l'avremmo fatto? No, non parliamo di rinchiudere Elena in un bunker per simulare la Luna, anche se è stata la prima cosa che avete pensato. Però siamo al settimo cielo. Chi l'avrebbe mai detto che ci saremmo sposate? Forse voi sì, e anche noi, dopo averlo deciso in un pomeriggio folle di dicembre. Soprattutto, abbiamo deciso che volevamo celebrare con orgoglio il nostro amore insieme a voi, le persone che stanno leggendo questo messaggio. Dopotutto, per crescere due lesbiche ci vuole un villaggio. E quale posto migliore per riunire questo villaggio della Spagna, uno dei primissimi paesi al mondo a permettere che una celebrazione del genere potesse anche solo esistere? Così, per l'occasione, vi portiamo vicino a Barcellona, la città di Elena. Più precisamente, in un posto meraviglioso chiamato Masia Egara. Tante cose ci hanno conquistate di questo luogo, e ve le sveleremo passo dopo passo attraverso questo sito, fino al giorno del matrimonio.",
       countdown_title:"Conto alla rovescia per il grande giorno",
       days:"Giorni", hours:"Ore", minutes:"Minuti", seconds:"Secondi",
       explore:"Scopri la celebrazione"
     },
     event:{
       title:"La Celebrazione",
-      intro:"Ecco come si svolgerà la giornata. Ogni momento ha il suo posto e la sua luce, dai primi voti all'ultimo ballo.",
+      intro:"Come sarà la nostra giornata? Grazie a quel luogo magico che è la Masia Egara, ci sposteremo tra spazi diversi, ognuno con la sua atmosfera. Insieme guarderemo le ultime luci del giorno nascondersi dietro gli alberi e balleremo sotto la luce delle stelle più lontane.",
       items:[
-        {time:"17:00", title:"Cerimonia", place:"Bosque, Masia Egara", text:"Ci ritroveremo tra gli alberi per la cerimonia, officiata da Pau Torner. Cercate di arrivare almeno mezz'ora prima, verso le 16:30. La cerimonia stessa durerà circa un'ora."},
-        {time:"18:30", title:"Aperitivo", place:"Jardín Rojo, Masia Egara", text:"Drink e cucina catalana del Delta de l'Ebre, a cura di Xerta Catering, con foto e video in contemporanea."},
-        {time:"20:30", title:"Cena", place:"Era, Masia Egara", text:"Cena seduta all'Era, proprio di fronte alla masia — il tutto coronato dalla torta!"},
-        {time:"23:30", title:"Festa", place:"Bodega, Masia Egara", text:"È ora di festa! Si balla nella Bodega, al coperto."}
+        {time:"17:00", title:"Cerimonia", place:"Bosque, Masia Egara", text:"Per la cerimonia ci ritroveremo in un piccolo bosco. Questo momento, il più intimo della giornata, durerà circa un'ora. Se potete, cercate di arrivare almeno mezz'ora prima, verso le 16:30. Ci vediamo tra gli alberi!"},
+        {time:"18:30", title:"Aperitivo", place:"Jardín Rojo, Masia Egara", text:"Dal bosco passeremo a un giardino tranquillo, dove berremo qualcosa e assaggeremo la cucina catalana del Delta de l'Ebre. Speriamo di condividere con voi un pezzetto della terra in cui saremo!"},
+        {time:"20:30", title:"Cena", place:"Era, Masia Egara", text:"Al calar della notte, ci avvicineremo alle mura della masia. Per la cena ci siederemo sull'Era, proprio davanti all'ingresso della masia!"},
+        {time:"23:30", title:"Festa", place:"Bodega, Masia Egara", text:"Per l'ultima parte del matrimonio, varcheremo finalmente le porte della masia. È ora di ballare tutta la notte, al coperto, nella Bodega!"}
       ],
-      note:"Questi orari sono il più precisi possibile — vi avviseremo in caso di cambiamenti."
+      note:"Questi orari sono il più precisi possibile; vi avviseremo in caso di cambiamenti."
     },
     getting:{
       title:"Come Arrivare",
-      intro:"Masia Egara si trova in campagna vicino a Terrassa, a circa 25 km (circa 30 minuti) a nord di Barcellona. Ecco come raggiungerci.",
+      intro:"La Masia Egara si trova in campagna vicino a Terrassa, a circa 25 km (circa 30 minuti) a nord di Barcellona. Ecco come raggiungerci.",
       by_car_title:"In Auto",
       by_car_text:"L'indirizzo è Carretera de Rellinars Km 2.4, 08225 Terrassa, Barcellona — <a href='https://maps.app.goo.gl/DeM8DD5ZF3uXXBXk6' target='_blank' rel='noopener'>apri in Google Maps</a>. C'è un ampio parcheggio a circa 10 minuti a piedi dalla location, lungo un sentiero di ghiaia; se avete esigenze di accessibilità, è disponibile un parcheggio più vicino — fatecelo sapere.",
       by_bus_title:"In Autobus",
-      by_bus_text:"Stiamo organizzando dei bus navetta da [Terrassa, punto d'incontro] fino a Masia Egara, con partenza prevista intorno alle [XX:XX] e servizio di ritorno a fine serata. Ulteriori dettagli più vicino alla data.",
+      by_bus_text:"Stiamo ancora organizzando dei bus navetta tra Barcellona/Terrassa e la Masia Egara, sia per l'arrivo che per il ritorno a fine serata. Ricontrollate questa pagina più avanti: aggiungeremo qui il punto d'incontro e gli orari appena saranno definiti.",
       from_bcn_title:"Da Barcellona",
       from_bcn_text:"Vi consigliamo di atterrare a Barcellona. Da lì potete scegliere di alloggiare a Barcellona stessa, a Terrassa, o persino a Sabadell, la città più vicina, se avete un'auto.<br><br>Per andare da Barcellona a Terrassa, prendete i Ferrocarrils de la Generalitat (FGC), linea S1, da Plaça Catalunya, Provença o Muntaner, nel centro città, e scendete a Vallparadís Universitat o Terrassa Nord, da dove partiranno i nostri bus navetta. Un biglietto di sola andata costa 5,40€; ricordate di comprare un biglietto Zona 3.<br><br>Un Uber da Barcellona costa circa 50€ ed è un'altra opzione se preferite arrivare direttamente.",
       map_label:"Trovaci sulla mappa",
@@ -443,34 +435,32 @@ const translations = {
     },
     location:{
       title:"Masia Egara",
-      subtitle:"Dove ci diremo sì",
-      text1:"Masia Egara è un'antica cascina catalana appena fuori Terrassa, circondata da campi e giardini. I suoi archi in pietra, le travi in legno e i cortili aperti la fanno sembrare un luogo che aspettava da tempo una celebrazione.",
-      text2:"Amiamo i colori e i giardini lussureggianti di questo luogo, e non vediamo l'ora di condividere con voi una vera masia catalana.",
-      photo_note:"[Aggiungi qui le foto della location]",
-      features:[
-        {label:"Giardini", text:"La location comprende il Jardín Rojo, il Jardín Verde e il giardino centenario."},
-        {label:"Spazio cerimonia", text:"Nel Bosque — un piccolo anfiteatro naturale."},
-        {label:"Parcheggio in loco", text:"Disponibile — vi chiediamo di confermarlo con noi in anticipo."},
-        {label:"Accessibilità", text:"È disponibile un parcheggio più vicino alla location per chi ne ha bisogno."}
-      ]
+      subtitle:"Una masia catalana con otto secoli di storie",
+      q1:"Cos'è una masia?",
+      text1:"Una masia è una <strong>casa colonica tradizionale catalana</strong>, dove viveva e lavorava la famiglia proprietaria dei terreni. Oggi molte masie sono state trasformate in hotel, ristoranti e spazi per eventi.",
+      q2:"Qual è la storia della Masia Egara?",
+      text2:"La Masia Egara prende il nome da <strong>Egara, l'antico nome romano di Terrassa</strong>. La casa, conosciuta in origine come Ca n'Amat, compare già in documenti dell'<strong>inizio del XIII secolo</strong>, quando era sotto il dominio del monastero di Montserrat. L'edificio che vedrete oggi risale all'<strong>inizio del XVI secolo</strong> ed è sempre appartenuto alla stessa famiglia. Durante la Guerra civile spagnola, quella famiglia <strong>nascose dei repubblicani tra le sue mura</strong>.",
+      text2b:"Oggi sorge al centro di <strong>300 ettari</strong> di campi e bosco, circondata da <strong>4 ettari di giardini centenari</strong> progettati dalla scuola dell'architetto <strong>Rubió i Tudurí</strong>, tra i giardini privati meglio conservati della Catalogna. All'interno, le sue sale custodiscono mobili e opere di ogni epoca, dagli arazzi del Cinquecento all'arte moderna.",
+      q3:"Perché ce ne siamo innamorate?",
+      text3:"È vicina al posto da cui viene Elena (proprio accanto a dove ha studiato, in realtà), custodisce una <strong>storia di coraggio</strong> e, proprio come la sua storia, è piena di <strong>angoli segreti</strong>. Passeggiando qui abbiamo sentito una specie di <strong>magia bohémien</strong>: la sensazione che in qualsiasi momento potesse succedere qualcosa di fantastico."
     },
     faq:{
       title:"Domande Frequenti",
       items:[
-        {q:"Avete una lista nozze?", a:"Il regalo più bello è avervi con noi. Se comunque volete contribuire con qualcosa, un pensiero per il nostro viaggio di nozze per noi vale più di un regalo fisico — potete farlo tramite bonifico: IBAN [da aggiungere]."},
-        {q:"Qual è il dress code?", a:"Elegante. Saremo all'aperto, su erba e ghiaia, quindi consigliamo scarpe comode piuttosto che tacchi sottili."},
-        {q:"Possiamo arrivare in auto?", a:"Sì — consulta la pagina 'Come Arrivare' per l'indirizzo, le indicazioni e i dettagli sul parcheggio."},
-        {q:"C'è un trasporto da Terrassa?", a:"Sì, stiamo organizzando bus navetta tra Terrassa e la location, sia per l'arrivo che per il ritorno a fine serata. Gli orari saranno condivisi più vicino alla data."},
-        {q:"Chi posso contattare per domande?", a:"Scriveteci quando volete — [Nome]: [telefono / email], [Nome]: [telefono / email]."},
-        {q:"Posso portare un accompagnatore?", a:"Purtroppo no, per limiti di spazio. Se potete venire accompagnati, quella persona avrà ricevuto un proprio invito."},
-        {q:"I bambini sono benvenuti?", a:"Se il vostro invito include i vostri figli, saranno più che benvenuti! In caso contrario, speriamo comprendiate — con uno spazio così raccolto dobbiamo contenere il numero di ospiti."}
+        {q:"Avete una lista nozze?", a:"Il regalo più bello è avervi con noi. Se comunque volete contribuire con qualcosa, un pensiero per il nostro viaggio di nozze per noi vale più di un regalo fisico — potete farlo tramite bonifico: IBAN [da aggiungere].<br><br>E siccome siamo un disastro a mantenere i segreti, ecco tre foto della nostra destinazione. Riuscite a indovinare dove andiamo? Nessun premio, solo la gloria.", photos:3},
+        {q:"Qual è il dress code?", a:"Venite come siete! Qualsiasi variante di elegante, dal classico al camp, è più che benvenuta. Indossate qualsiasi colore (ok, tranne il bianco, saremo già in due), texture o tessuto: se piace a voi, piacerà anche a noi."},
+        {q:"Possiamo arrivare in auto?", a:"Sì: consultate la pagina 'Come Arrivare' per l'indirizzo, le indicazioni e i dettagli sul parcheggio!"},
+        {q:"C'è un trasporto da Barcellona o Terrassa?", a:"Sì, stiamo preparando dei bus navetta tra Barcellona/Terrassa e la Masia Egara, sia per l'arrivo che per il ritorno a fine serata. Li stiamo ancora organizzando, quindi ricontrollate il sito più avanti per il punto d'incontro e gli orari."},
+        {q:"Chi posso contattare per domande?", a:"Scriveteci quando volete! Elena López-Contreras: <a href='https://wa.me/33786571310' target='_blank' rel='noopener'>+33 7 86 57 13 10</a> (WhatsApp) oppure <a href='mailto:elenalcontreras@gmail.com'>elenalcontreras@gmail.com</a>."},
+        {q:"Posso portare un accompagnatore?", a:"Ci piacerebbe accogliere tutti, ma lo spazio è limitato e abbiamo sognato una celebrazione piccola e intima, circondate dalle persone più vicine. Quindi questa volta l'invito è solo per te, e siamo felicissime che farai parte della nostra giornata!"},
+        {q:"I bambini sono benvenuti?", a:"Sì, e se il livello di zuccheri sarà abbastanza alto, sappiamo che li vedremo in pista. Fateci sapere in anticipo se verranno i vostri bambini!"}
       ]
     },
-    footer:{ text:"Fatto con amore. Ci vediamo a Masia Egara." },
+    footer:{ text:"Fatto con amore. Ci vediamo alla Masia Egara." },
     rsvp:{
-      title:"Questionario prima del matrimonio Elena &amp; Vero",
+      title:"Questionario del matrimonio di Elena &amp; Vero",
       intro_note:"Un modulo per persona, per favore, bambini inclusi. Non possiamo accogliere accompagnatori aggiuntivi: se venite con qualcuno, quella persona avrà ricevuto un proprio invito.",
-      text:"Saremo felicissimi di avervi con noi nel nostro giorno speciale. Confermate la vostra presenza qui sotto — abbiamo bisogno del questionario compilato di ogni persona per avere tutte le informazioni corrette e organizzare bene il matrimonio. Tutto ciò che condividerete sarà trattato con la massima riservatezza, in conformità con la normativa sulla protezione dei dati, e utilizzato solo per l'organizzazione del nostro evento. Grazie per il vostro aiuto, e ricordate di rimandarcelo entro il 1° dicembre!",
+      text:"Come avrete intuito, se avete ricevuto questo invito è perché <strong>fate parte del nostro villaggio</strong>: le persone con cui condividiamo la nostra vita. Non riusciremmo a immaginare una festa senza proprio le persone che la rendono degna di essere festeggiata. Perciò, che veniate da vicino o da molto, molto lontano, <strong>saremo felicissime di avervi con noi</strong> nel nostro giorno speciale.<br><br>Il modulo al link qui sotto ci aiuterà a <strong>organizzare tutta la giornata</strong> e a <strong>sapere se potrete esserci</strong>. Abbiamo bisogno del questionario compilato da ogni persona per avere tutte le informazioni corrette. Tutto ciò che condividerete sarà trattato con la <strong>massima riservatezza</strong>, in conformità con la normativa sulla protezione dei dati, e utilizzato solo per l'organizzazione del nostro evento.<br><br><strong>Un modulo per persona.</strong> Se avete figli, <strong>compilatene uno anche per ciascuno di loro</strong>. La nostra lista di invitati è piuttosto piccola, quindi ogni ospite ha ricevuto <strong>un invito personale</strong>: se una persona a voi cara viene con noi, ne avrà anche lei uno con il suo nome!<br><br>Grazie per il vostro aiuto, e ricordate di rimandarcelo <strong>entro il 1° dicembre</strong>!",
       button:"Apri il modulo"
     }
   }

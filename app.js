@@ -134,39 +134,48 @@ function setupCarousels(){
   });
 }
 
-const featureIcons = [
-  '<path d="M12 3C8 6 8 10 8 13a4 4 0 0 0 8 0c0-3 0-7-4-10Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 13V21" stroke="currentColor" stroke-width="1.5"/>',
-  '<path d="M12 21C12 21 5 15.5 5 10.2C5 6.8 7.7 4 11 4C11.5 4 12 4.4 12 5C12 4.4 12.5 4 13 4C16.3 4 19 6.8 19 10.2C19 15.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.5"/>',
-  '<rect x="3" y="9" width="18" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6.5C7 5.1 8.1 4 9.5 4H14.5C15.9 4 17 5.1 17 6.5V9" stroke="currentColor" stroke-width="1.5"/>',
-  '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 12.5L11 15L15.5 9.5" stroke="currentColor" stroke-width="1.5"/>'
+// "From Barcelona" card: one icon per paragraph (plane, train, taxi/Uber).
+// The paragraphs come from getting.from_bcn_text, separated by <br><br>.
+const fromBcnIcons = [
+  '<path d="M21 15.5L13.5 11V5.5C13.5 4.7 12.8 3.5 12 3.5S10.5 4.7 10.5 5.5V11L3 15.5V17.5L10.5 15V19L8.5 20.5V21.5L12 20.5L15.5 21.5V20.5L13.5 19V15L21 17.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>',
+  '<rect x="5.5" y="3" width="13" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 10H18.5" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="13.5" r="1" fill="currentColor"/><circle cx="15" cy="13.5" r="1" fill="currentColor"/><path d="M8.5 17L6.5 21M15.5 17L17.5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
+  '<rect x="9.5" y="2.5" width="5" height="2.5" rx="0.5" stroke="currentColor" stroke-width="1.3"/><path d="M5 12L6.5 7.5C6.8 6.6 7.6 6 8.6 6H15.4C16.4 6 17.2 6.6 17.5 7.5L19 12" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="12" width="18" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="19.5" r="1.4" fill="currentColor"/><circle cx="17" cy="19.5" r="1.4" fill="currentColor"/>'
 ];
-function renderFeatures(t){
-  const el = document.getElementById('featureGrid');
-  el.innerHTML = t.location.features.map((f,i) => `
-    <div class="feature">
-      <svg class="icon" viewBox="0 0 24 24" fill="none">${featureIcons[i % featureIcons.length]}</svg>
-      <h4>${f.label}</h4>
-      <p>${f.text}</p>
+function renderFromBcn(t){
+  const el = document.getElementById('fromBcn');
+  if(!el) return;
+  const parts = (t.getting.from_bcn_text || '').split(/<br\s*\/?>\s*<br\s*\/?>/);
+  el.innerHTML = parts.map((p, i) => `
+    <div class="bcn-step">
+      <svg class="bcn-icon" viewBox="0 0 24 24" fill="none">${fromBcnIcons[i % fromBcnIcons.length]}</svg>
+      <p>${p}</p>
     </div>
   `).join('');
 }
 
+// An FAQ item can have `photos: N` — it then shows N photo slots under the answer.
+// Drop files named gift-1.jpeg, gift-2.jpeg, gift-3.jpeg into the photos folder to fill them.
 function renderFaq(t){
   const el = document.getElementById('faqList');
-  el.innerHTML = t.faq.items.map((item, i) => `
+  el.innerHTML = t.faq.items.map((item, i) => {
+    const photos = item.photos
+      ? `<div class="faq-photos">${Array.from({length:item.photos}, (_, k) => photoFrame(`gift-${k+1}.jpeg`)).join('')}</div>`
+      : '';
+    return `
     <div class="faq-item" data-index="${i}">
       <button class="faq-q" type="button">
         <span>${item.q}</span>
         <span class="plus"></span>
       </button>
-      <div class="faq-a"><div class="faq-a-inner">${item.a}</div></div>
-    </div>
-  `).join('');
+      <div class="faq-a"><div class="faq-a-inner">${item.a}${photos}</div></div>
+    </div>`;
+  }).join('');
   el.querySelectorAll('.faq-q').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       btn.closest('.faq-item').classList.toggle('open');
     });
   });
+  setupPhotoFallbacks();
 }
 
 /* ============ LANGUAGE ============ */
@@ -183,7 +192,7 @@ function applyLanguage(lang){
 
   renderTimeline(t);
   renderHotels(t);
-  renderFeatures(t);
+  renderFromBcn(t);
   renderFaq(t);
 
   document.querySelectorAll('.lang-btn').forEach(b=>{
