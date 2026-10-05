@@ -128,28 +128,56 @@
     color:var(--ink);
     border-bottom:2px solid var(--cobalt);
   }
+  /* ---------- LANGUAGE BAR (above the section tabs) ---------- */
+  .lang-bar{
+    background:var(--ink);
+    border-bottom:1px solid var(--line-on-ink);
+  }
   .lang-switch{
+    max-width:1140px;
+    margin:0 auto;
+    padding:6px 16px;
     display:flex;
-    gap:0;
-    border:1px solid var(--line);
-    flex-shrink:0;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:4px;
   }
   .lang-btn{
-    border:none;
-    border-right:1px solid var(--line);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid transparent;
     background:transparent;
     font-family:'Space Grotesk', sans-serif;
-    font-size:0.68rem;
+    font-size:0.72rem;
     font-weight:600;
-    letter-spacing:0.03em;
-    padding:7px 10px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    padding:6px 12px;
     cursor:pointer;
-    color:var(--ink-soft);
-    transition:background 0.2s ease, color 0.2s ease;
+    color:rgba(243,239,230,0.7);
+    transition:background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   }
-  .lang-btn:last-child{border-right:none;}
-  .lang-btn:hover{background:rgba(60,90,166,0.08);color:var(--ink);}
-  .lang-btn.active{background:var(--ink);color:var(--cream);}
+  .lang-btn:hover{color:var(--cream);background:rgba(243,239,230,0.08);}
+  .lang-btn.active{
+    color:var(--cream);
+    border-color:var(--cobalt-bright);
+    background:rgba(89,120,196,0.18);
+  }
+  .lang-btn .flag{
+    width:20px;height:14px;
+    flex-shrink:0;
+    display:block;
+    border-radius:2px;
+    box-shadow:0 0 0 1px rgba(243,239,230,0.25);
+  }
+  .lang-btn .lang-code{display:none;}
+  @media (max-width:560px){
+    .lang-switch{padding:5px 8px;gap:2px;}
+    .lang-btn{padding:6px 8px;gap:6px;}
+    .lang-btn .lang-name{display:none;}
+    .lang-btn .lang-code{display:inline;}
+  }
   .nav-toggle{
     display:none;
     border:1px solid var(--line);
@@ -659,6 +687,49 @@
 <body>
 
 <header>
+  <div class="lang-bar">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="en" lang="en" type="button">
+        <svg class="flag" viewBox="0 0 60 30" preserveAspectRatio="none" aria-hidden="true">
+          <clipPath id="ukc"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+          <clipPath id="ukt"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+          <g clip-path="url(#ukc)">
+            <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ukt)" stroke="#C8102E" stroke-width="4"/>
+            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+          </g>
+        </svg>
+        <span class="lang-name">English</span><span class="lang-code">EN</span>
+      </button>
+      <button class="lang-btn" data-lang="es" lang="es" type="button">
+        <svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="none" aria-hidden="true">
+          <rect width="3" height="2" fill="#AA151B"/><rect y="0.5" width="3" height="1" fill="#F1BF00"/>
+        </svg>
+        <span class="lang-name">Español</span><span class="lang-code">ES</span>
+      </button>
+      <button class="lang-btn" data-lang="ca" lang="ca" type="button">
+        <svg class="flag" viewBox="0 0 9 6" preserveAspectRatio="none" aria-hidden="true">
+          <rect width="9" height="6" fill="#FCDD09"/>
+          <path d="M0,1h9M0,2.333h9M0,3.667h9M0,5h9" stroke="#DA121A" stroke-width="0.667"/>
+        </svg>
+        <span class="lang-name">Català</span><span class="lang-code">CA</span>
+      </button>
+      <button class="lang-btn" data-lang="fr" lang="fr" type="button">
+        <svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="none" aria-hidden="true">
+          <rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE1126"/>
+        </svg>
+        <span class="lang-name">Français</span><span class="lang-code">FR</span>
+      </button>
+      <button class="lang-btn" data-lang="it" lang="it" type="button">
+        <svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="none" aria-hidden="true">
+          <rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/>
+        </svg>
+        <span class="lang-name">Italiano</span><span class="lang-code">IT</span>
+      </button>
+    </div>
+  </div>
   <div class="nav-inner">
     <div class="brand">
       <svg viewBox="0 0 24 24" fill="none"><path d="M4 21V11C4 6.6 7.6 3 12 3C16.4 3 20 6.6 20 11V21" stroke="currentColor" stroke-width="1.5"/><path d="M4 21H20" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -673,13 +744,6 @@
       <a href="#faq" class="nav-link" data-tab="faq" data-i18n="nav.faq">FAQ</a>
       <a href="#rsvp" class="nav-link" data-tab="rsvp" data-i18n="nav.rsvp">RSVP</a>
     </nav>
-    <div class="lang-switch">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <button class="lang-btn" data-lang="es">ES</button>
-      <button class="lang-btn" data-lang="ca">CA</button>
-      <button class="lang-btn" data-lang="fr">FR</button>
-      <button class="lang-btn" data-lang="it">IT</button>
-    </div>
   </div>
 </header>
 
